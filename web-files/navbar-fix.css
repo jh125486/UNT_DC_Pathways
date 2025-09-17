@@ -1,0 +1,73 @@
+/* Custom navbar styles to fix layout issues */
+.navbar {
+    background-color: var(--portalThemeColor1, #00853e) !important;
+}
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+}
+
+.navbar-brand a {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.navbar-brand a:hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.navbar-brand .siteTitle {
+    color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: normal !important;
+    display: inline !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd !important;
+}
+
+.navbar-nav .nav-item {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.divider-vertical {
+    border-left: 1px solid rgba(255,255,255,0.3) !important;
+    height: 20px !important;
+    margin: 0 !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.3) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Fix for mobile menu */
+@media (max-width: 1199.98px) {
+    .navbar-collapse {
+        background-color: var(--portalThemeColor1, #00853e) !important;
+        margin-top: 0.5rem !important;
+        padding: 0.5rem !important;
+        border-radius: 0.25rem !important;
+    }
+    
+    .divider-vertical {
+        display: none !important;
+    }
+}
