@@ -46,8 +46,11 @@
 
 .divider-vertical {
     border-left: 1px solid rgba(255,255,255,0.3) !important;
-    height: 20px !important;
-    margin: 0 !important;
+    height: 16px !important;
+    margin: 0 0.5rem !important;
+    width: 1px !important;
+    align-self: center !important;
+    border-right: none !important;
 }
 
 .navbar-toggler {
@@ -56,6 +59,19 @@
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Override theme CSS for dividers */
+.static-top.navbar .menu-bar > .navbar-nav > .divider-vertical {
+    height: 16px !important;
+    margin: 0 0.5rem !important;
+    border-right: none !important;
+    border-left: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+.static-top.navbar-dark .divider-vertical {
+    border-right-color: transparent !important;
+    border-left-color: rgba(255,255,255,0.3) !important;
 }
 
 /* Fix for mobile menu */
